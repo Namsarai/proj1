@@ -8,7 +8,7 @@ int main(int argc, char *argv[])
     char b;
     char c;
 
-    if ((fp1 = fopen("test.txt", "r")) == NULL)
+    if ((fp1 = fopen(argv[1], "r")) == NULL)
     {
         printf("Ошибка при открытии файла test.txt.\n");
         exit(1);
@@ -16,7 +16,7 @@ int main(int argc, char *argv[])
     else
         printf("Файл test.txt открыт.\n");
     
-    if ((fp2 = fopen("test.html", "w")) == NULL)
+    if ((fp2 = fopen(argv[2], "w")) == NULL)
     {
         printf("Ошибка при открытии файла test.html.\n");
     }
